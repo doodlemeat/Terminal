@@ -1,0 +1,248 @@
+general:
+    font_path: ../fonts/
+    sprite_path: ../sprites/
+    sound_path: ../sound/
+    music_path: ../music/
+    map_path: ../maps/
+    bullet_radius: 4
+    bullet_color_r: 255
+    bullet_color_g: 100
+    bullet_color_b: 255
+    fullscreen: true
+    bullet_color_a: 255
+    resolution_x: 1920
+    resolution_y: 1080
+guards:
+    vision_r: 0
+    vision_g: 255
+    vision_a: 100
+    vision_b: 66
+    vision_r_detected: 0
+    vision_g_detected: 66
+    hitbox_w: 32
+    hitbox_x: 0
+    hitbox_h: 32
+    hitbox_y: 0
+    run_speed: 240
+    vision_b_detected: 255
+    walk_speed: 100
+    vision_a_detected: 100
+cameras:
+    vision_r: 100
+    vision_g: 40
+    vision_b: 180
+    vision_a: 100
+    vision_a_detected: 200
+    vision_b_detected: 0
+    vision_r_detected: 255
+    vision_g_detected: 0
+sounds:
+    player_walk: step
+    player_sprint: step
+    player_sneak: step
+    player_sneak_rr: 10
+    player_walk_rr: 50
+    player_sprint_rr: 100
+player:
+    key_right: d
+    key_left: a
+    key_down: s
+    key_up: w
+    walk_speed: 140
+    sprint_speed: 295
+    key_useaction: right_mouse_button
+    key_toggle_items: q
+    key_activate_sneak: left_ctrl
+    key_activate_sprint: left_shift
+    key_use: e
+    key_shoot: left_mouse_button
+    hitbox_h: 32
+    shoot_radius: 600
+    step_radius: 150
+    walk_slowdown_factor: 0.8
+    sneak_slowdown_factor: 0.7
+    sprint_slowdown_factor: 0.9
+    sneak_speed: 70
+    max_hp: 5
+    min_fatigue: 0
+    max_fatigue: 100
+    hp: 5
+    hitbox_y: 0
+    hitbox_x: 0
+    hitbox_w: 32
+animations:
+    player_walk:
+        image: mc.png
+        frames:
+            -
+                -   0
+                -   0
+            -
+                -   128
+                -   0
+            -
+                -   256
+                -   0
+            -
+                -   384
+                -   0
+            -
+                -   512
+                -   0
+            -
+                -   640
+                -   0
+            -
+                -   768
+                -   0
+            -
+                -   896
+                -   0
+            -
+                -   1024
+                -   0
+            -
+                -   1152
+                -   0
+        frame_duration: 150
+        frame_size:
+            -   128
+            -   128
+    player_idle_cloth:
+        image: idle.png
+        frames:
+            -
+                -   384
+                -   0
+            -
+                -   512
+                -   0
+            -
+                -   640
+                -   0
+        frame_size:
+            -   128
+            -   128
+        frame_duration: 150
+    player_idle_body:
+        image: idle.png
+        frame_duration: 150
+        frames:
+            -
+                -   0
+                -   0
+            -
+                -   128
+                -   0
+            -
+                -   256
+                -   0
+        frame_size:
+            -   128
+            -   128
+    player_idle_head:
+        image: idle.png
+        frames:
+            -
+                -   768
+                -   0
+            -
+                -   896
+                -   0
+            -
+                -   1024
+                -   0
+        frame_duration: 150
+        frame_size:
+            -   128
+            -   128
+    player_sneak:
+        image: mc.png
+        frames:
+            -
+                -   512
+                -   128
+            -
+                -   640
+                -   128
+            -
+                -   768
+                -   128
+            -
+                -   896
+                -   128
+            -
+                -   1024
+                -   128
+            -
+                -   1152
+                -   128
+            -
+                -   0
+                -   256
+            -
+                -   128
+                -   256
+            -
+                -   256
+                -   256
+        frame_size:
+            -   128
+            -   128
+        frame_duration: 150
+    player_sprint:
+        frames:
+            -
+                -   0
+                -   128
+            -
+                -   128
+                -   128
+            -
+                -   256
+                -   128
+            -
+                -   384
+                -   128
+        frame_size:
+            -   128
+            -   128
+        frame_duration: 150
+        image: mc.png
+    guard1_walk:
+        frame_size:
+            -   128
+            -   128
+        frame_duration: 150
+        frames:
+            -
+                -   0
+                -   0
+            -
+                -   128
+                -   0
+            -
+                -   256
+                -   0
+            -
+                -   384
+                -   0
+            -
+                -   512
+                -   0
+            -
+                -   640
+                -   0
+            -
+                -   768
+                -   0
+            -
+                -   896
+                -   0
+            -
+                -   1024
+                -   0
+            -
+                -   1152
+                -   0
+        image: guard1_walk.png

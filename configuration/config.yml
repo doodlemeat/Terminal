@@ -1,0 +1,477 @@
+general:
+    sprite_path: ../sprites/
+    sound_path: ../sound/
+    font_path: ../fonts/
+    music_path: ../music/
+    map_path: ../maps/
+    
+    item_path: items/
+    weapon_path: weapons/
+    keycard_path: keycard/
+    coin_path: coin/
+    
+    hud_path: hud/
+
+    bullet_radius: 4
+    bullet_speed: 40
+    bullet_color_r: 33
+    bullet_color_g: 33
+    bullet_color_b: 33
+    bullet_color_a: 255
+
+    fullscreen: true
+    default_resolution_x: 1920
+    default_resolution_y: 1080
+    gui_scale_x: 90
+    gui_scale_y: 90
+    
+    start_state: IntroState
+    
+    empty_clip_timer: 300
+    loose_fadeout_factor: 1
+    coin_throw_speed: 5
+    coin_ripple_radius: 300
+    
+    intro_untagged_part_of_new_mount_doom_length_in_ms: 34000
+    intro_images:
+        - intro/1.png
+        - intro/2.png
+        - intro/3.png
+        - intro/4.png
+        - intro/5.png
+        - intro/6.png
+        - intro/7.png
+        - intro/8.png
+
+fonts:
+    tahoma: tahoma.ttf
+hud:
+    char_frame:
+        image: hud/char_frame.png
+        x: 0
+        y: 0
+        scale: 1.0
+    char:
+        x: 10
+        y: 10
+        images:
+            - hud/char_1.png
+            - hud/char_2.png
+            - hud/char_3.png
+            - hud/char_4.png
+    small_item_background:
+        offset_x: 180
+        offset_y: 110
+    big_item_background:
+        offset_x: 100
+        offset_y: 180
+guards:
+    vision_r: 0
+    vision_g: 255
+    vision_b: 66
+    vision_a: 100
+    vision_r_detected: 0
+    vision_g_detected: 66
+    vision_b_detected: 255
+    vision_a_detected: 100
+    walk_speed: 100
+    run_speed: 240
+    hitbox_x: 0
+    hitbox_y: 0
+    hitbox_w: 32
+    hitbox_h: 32
+    guard_max_idle_second: 10
+    hp: 3
+cameras:
+    vision_r: 100
+    vision_g: 40
+    vision_b: 180
+    vision_a: 100
+    vision_r_detected: 255
+    vision_g_detected: 0
+    vision_b_detected: 0
+    vision_a_detected: 200
+    alert_distance: 2000
+sounds:
+    player_sprint:
+        - step1
+        - step2
+        - step3
+    player_walk:
+        - step1
+        - step2
+        - step3
+    player_sneak:
+        - step1
+        - step2
+        - step3
+    player_sprint_rr: 100
+    player_walk_rr: 50
+    player_sneak_rr: 10
+player:
+    key_up: w
+    key_down: s
+    key_left: a
+    key_right: d
+    key_activate_sprint: left_shift
+    key_activate_sneak: left_ctrl
+    key_toggle_items: q
+    key_use: e
+    key_dropitem: f
+    key_shoot: left_mouse_button
+    key_useaction: right_mouse_button
+    sprint_speed: 255
+    walk_speed: 140
+    sneak_speed: 70
+    max_hp: 4
+    hp: 4
+    min_fatigue: 0
+    max_fatigue: 100
+    hitbox_x: 0
+    hitbox_y: 0
+    hitbox_w: 32
+    hitbox_h: 32
+    shoot_radius: 500
+    step_radius: 150
+    sprint_slowdown_factor: 0.9
+    walk_slowdown_factor: 0.8
+    sneak_slowdown_factor: 0.7
+
+    sound_emit_move_timer: 1000
+    sound_emit_breath_timer: 1000
+    sound_emit_breath_radius_factor: 2
+    
+    fatique_change_shoot: 10
+    fatigue_change_idle: -1
+    fatigue_change_idle_timer: 200
+    fatigue_change_sneak: -1
+    fatigue_change_sneak_timer: 500
+    fatigue_change_walk: 0
+    fatigue_change_walk_timer: 1000
+    fatigue_change_sprint: 1
+    fatigue_change_sprint_timer: 150
+    sneak_soundripple_radius: 50
+    walk_soundripple_radius: 150
+    sprint_soundripple_radius: 200
+    disguise_timer: 3
+    
+animations:
+    blood:
+        image: blood.png
+        frames:
+            - [0, 0]
+            - [129, 0]
+            - [258, 0]
+        frame_size: [129, 120]
+        frame_duration: 1000
+    player_idle_body:
+        image: player_animations.png
+        frames:
+            - [0, 768]
+            - [128, 768]
+            - [256, 768]
+        frame_size: [128,128]
+        frame_duration: 300
+    player_idle_cloth:
+        image: player_animations.png
+        frames:
+            - [384, 768]
+            - [512, 768]
+            - [640, 768]
+        frame_size: [128,128]
+        frame_duration: 300
+    player_idle_head:
+        image: player_animations.png
+        frames:
+            - [768, 768]
+            - [896, 768]
+            - [1024, 768]
+        frame_size: [128,128]
+        frame_duration: 300         
+    player_walk_body:
+        image: player_animations.png
+        frames:
+            - [0,   0]
+            - [384, 0]
+            - [768, 0]
+            - [0, 128]
+            - [384, 128]
+            - [768, 128]
+            - [0, 256]
+            - [384, 256]
+            - [768, 256]
+            - [0, 384]
+        frame_size: [128,128]
+        frame_duration: 150    
+    player_walk_cloth:
+        image: player_animations.png
+        frames:
+            - [128, 0]
+            - [512, 0]
+            - [896, 0]
+            - [128, 128]
+            - [512, 128]
+            - [896, 128]
+            - [128, 256]
+            - [512, 256]
+            - [896, 256]
+            - [128, 384]
+        frame_size: [128,128]
+        frame_duration: 150 
+    player_walk_head:
+        image: player_animations.png
+        frames:
+            - [256, 0]
+            - [640, 0]
+            - [1024, 0]
+            - [256, 128]
+            - [640, 128]
+            - [1024, 128]
+            - [256, 256]
+            - [640, 256]
+            - [1024, 256]
+            - [256, 384]
+        frame_size: [128,128]
+        frame_duration: 150       
+    player_sprint_head:
+        image: player_animations.png
+        frames:
+            - [640, 384]
+            - [256, 512]
+            - [1024, 384]
+            - [640, 512]
+        frame_size: [128,128]
+        frame_duration: 150  
+    player_sprint_cloth:
+        image: player_animations.png
+        frames:
+            - [512, 384]
+            - [128, 512]
+            - [896, 384]
+            - [512, 512]
+        frame_size: [128,128]
+        frame_duration: 150   
+    player_sprint_body:
+        image: player_animations.png
+        frames:
+            - [384, 384]
+            - [0, 512]
+            - [768, 384]
+            - [384, 512]
+        frame_size: [128,128]
+        frame_duration: 150    
+    player_sneak_body:
+        image: player_animations.png
+        frames:
+            - [0, 1024]
+            - [256, 1024]
+            - [512, 1024]
+            - [768, 1024]
+            - [1024, 1024]
+            - [128, 1152]
+            - [384, 1152]
+            - [640, 1152]
+            - [896, 1152]
+        frame_size: [128,128]
+        frame_duration: 150 
+    player_sneak_head:
+        image: player_animations.png
+        frames:
+            - [128, 1024]
+            - [384, 1024]
+            - [640, 1024]
+            - [896, 1024]
+            - [0, 1152]
+            - [256, 1152]
+            - [512, 1152]
+            - [768, 1152]
+            - [1024, 1152]
+        frame_size: [128,128]
+        frame_duration: 150
+    player_gun_body:
+        image: player_animations.png
+        frames:
+            - [768,512]
+            - [0,640]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_gun_head:
+        image: player_animations.png
+        frames:
+            - [1024,512]
+            - [256,640]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_gun_cloth:
+        image: player_animations.png
+        frames:
+            - [896,512]
+            - [128,640]
+        frame_size: [128, 128]
+        frame_duration: 150   
+    player_rifle_body:
+        image: player_animations.png
+        frames:
+            - [384,640]
+            - [768,640]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_rifle_head:
+        image: player_animations.png
+        frames:
+            - [640,640]
+            - [1024,640]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_rifle_cloth:
+        image: player_animations.png
+        frames:
+            - [512,640]
+            - [896,640]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_die:
+        image: player_animations.png
+        frames:
+            - [0, 1280]
+            - [128, 1280]
+            - [256, 1280]
+            - [384, 1280]
+            - [512, 1280]
+            - [640, 1280]
+            - [768, 1280]
+            - [896, 1280]
+            - [1024, 1280]
+            - [0, 1408]
+            - [128, 1408]
+            - [256, 1408]
+            - [384, 1408]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_hat_disg:
+        image: player_disg.png
+        frames:
+            - [768, 0]
+            - [896, 0]
+            - [1024, 0]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_body_disg:
+        image: player_disg.png
+        frames:
+            - [0, 0]
+            - [128, 0]
+            - [256, 0]
+        frame_size: [128, 128]
+        frame_duration: 150
+    player_cloth_disg:
+        image: player_disg.png
+        frames:
+            - [384, 0]
+            - [512, 0]
+            - [640, 0]
+        frame_size: [128, 128]
+        frame_duration: 150
+    guard1_walk:
+        image: guard_walk.png
+        frames:
+            - [0, 0]
+            - [128, 0]
+            - [256, 0]
+            - [384, 0]
+            - [512, 0]
+            - [640, 0]
+            - [768, 0]
+            - [896, 0]
+            - [1024, 0]
+            - [1152, 0]
+        frame_size: [128, 128]
+        frame_duration: 150  
+    empty:
+        image: empty.png
+        frames:
+            - [0, 0]
+        frame_size: [128, 128]
+        frame_duration: 100000
+    guard1_run:
+        image: guard_run.png
+        frames:
+            - [0, 0]
+            - [122, 0]
+            - [244, 0]
+            - [366, 0]
+        frame_size: [122, 94]
+        frame_duration: 150
+    guard1_die1:
+        image: guard_death1.png
+        frames:
+            - [0, 0]
+            - [0, 140]
+            - [200, 0]
+            - [200, 140]
+            - [400, 0]
+            - [400, 140]
+            - [600, 0]
+            - [600, 140]
+            - [800, 0]
+            - [800, 140]
+            - [1000, 0]
+            - [1000, 140]
+            - [1200, 0]
+            - [1200, 140]
+            - [1400, 0]
+            - [1400, 140]
+        frame_size: [200, 140]
+        frame_duration: 150
+    guard_shoot:
+        image: guard_shoot.png
+        frames:
+            - [0, 0]
+            - [140, 0]
+            - [280, 0]
+        frame_size: [140, 128]
+        frame_duration: 150
+items:
+    disg:
+        ground_image: disg_ground.png
+        ground_image_size: [71, 73]
+        hud_primary: hud/icons/disguise_icon_a.png
+        hud_secondary: hud/icons/disguise_icon_b.png
+    keycard:
+        ground_image: keycard_ground.png
+        ground_image_size: [30, 31]
+        hud_primary: hud/icons/key_icon_a.png
+        hud_secondary: hud/icons/key_icon_b.png
+    coin:
+        ground_image: coin_sprite.png
+        ground_image_size: [11, 13]
+        hud_primary: hud/icons/coin_icon_a.png
+        hud_secondary: hud/icons/coin_icon_b.png
+    weapons:
+        guns:
+            g17:
+                ammo: 10
+                # fire rate: lower value, the often the gun can shoot
+                fire_rate: 750
+                damage: 1
+                bullet_spread: 10
+                auto_fire: false
+                ground_image: 'g17_ground.png'
+                ground_image_size: [37, 28]
+                wear_image: g17_wear.png
+                hud_primary: icons/gun_icon_a.png
+                hud_secondary: icons/gun_icon_b.png
+        rifles:
+            ak5c:
+                ammo: 25
+                fire_rate: 250
+                damage: 2
+                auto_fire: true
+                bullet_spread: 10
+                # weight: 50 = 50%. current_movement = current_movement * 50 / 100
+                weight: 50
+                ground_image: 'ak5c_ground.png'
+                ground_image_size: [100, 33]
+                wear_image: ak5c_wear.png
+                hud_primary: icons/rifle_icon_a.png
+                hud_secondary: icons/rifle_icon_b.png

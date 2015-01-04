@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Audiomanager.cpp" />
+    <ClCompile Include="BulletManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="LightEngine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
+    <ClCompile Include="String.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="Viewport.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="ObjectGroup.cpp" />
+    <ClCompile Include="Maploader.cpp" />
+    <ClCompile Include="MapLayer.cpp" />
+    <ClCompile Include="GObject.cpp" />
+    <ClCompile Include="SoundRipple.cpp" />
+    <ClCompile Include="SoundrippleManager.cpp" />
+    <ClCompile Include="Pathfinder.cpp" />
+    <ClCompile Include="IntroState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="Guard.cpp">
+      <Filter>Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardStateAttack.cpp">
+      <Filter>Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardStateChase.cpp">
+      <Filter>Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardStateIdle.cpp">
+      <Filter>Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardStateSuspicious.cpp">
+      <Filter>Guard</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ClipperLib.cpp">
+      <Filter>External libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>External libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="Disg.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Keycard.cpp" />
+    <ClCompile Include="GameOverState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="WinGameState.cpp">
+      <Filter>Game States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Angle.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Audiomanager.h" />
+    <ClInclude Include="BulletManager.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="LightEngine.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Viewport.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="ObjectGroup.h" />
+    <ClInclude Include="Maploader.h" />
+    <ClInclude Include="MapLayer.h" />
+    <ClInclude Include="GObject.h" />
+    <ClInclude Include="SoundRipple.h" />
+    <ClInclude Include="SoundrippleManager.h" />
+    <ClInclude Include="Pathfinder.h" />
+    <ClInclude Include="State.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="OptionsState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="Guard.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardState.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStateAttack.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStateChase.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStateIdle.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStateSuspicious.h">
+      <Filter>Guard</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipperLib.h">
+      <Filter>External libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>External libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Goal.h" />
+    <ClInclude Include="Disg.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Keycard.h" />
+    <ClInclude Include="WinGameState.h">
+      <Filter>Game States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game States">
+      <UniqueIdentifier>{588f3358-7389-4899-9cdd-a66ca6ef0451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guard">
+      <UniqueIdentifier>{659ff8aa-92eb-4c68-afee-0b814f859819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{6524e3a9-5ece-469e-8a51-16dfceff447d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External libraries">
+      <UniqueIdentifier>{3f42cf27-70df-45bf-a6ec-e10ea58bb89c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
